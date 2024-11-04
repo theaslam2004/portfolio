@@ -1,0 +1,143 @@
+.custom-toolbar {
+  height: 150px; 
+}
+
+
+.greeting-icons-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 25px;
+}
+
+.greeting-icons-container p {
+  margin: 0;
+}
+
+.icons-container {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.icon {
+  font-size: 24px;
+  color: white;
+}
+
+.basket-container {
+  position: relative;
+}
+
+.notification-badge {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  background-color: rgb(255, 145, 0);
+  color: white;
+  border-radius: 50%;
+  padding: 4px 7px;
+  font-size: 12px;
+}
+
+.shop-category-container {
+  margin-top: 2px;
+  // height: 140px;
+}
+
+.rounded-thumbnail {
+  border-radius: 20px; /* Adjust this value for your desired rounding */
+  overflow: hidden; /* Ensures the image stays within the rounded borders */
+  height: 150px;
+  // border-radius-buttom: ;
+}
+
+.rounded-thumbnail img {
+  border-radius: 20px; /* Optional: If you want to specifically round the image */
+}
+.title {
+  font-size: 18px; /* Normal size for title */
+  margin-bottom: 4px; /* Space between title and subtitle */
+}
+
+.subtitle {
+  font-size: 14px; /* Smaller size for subtitle */
+  color: #000; /* Normal text color for subtitle */
+}
+
+.blue-text {
+  color: blue; /* Changes text color to blue */
+}
+
+.bottom-text {
+  margin-top: 8px; /* Adds spacing between subtitle and the bottom lines */
+  font-size: 14px; /* Text size for bottom lines */
+}
+
+
+
+.category-text {
+  font-weight: bolder;
+  line-height: 0.2;
+  height: 150px;
+}
+ion-item{
+  height: 180px;
+  border-radius: 20px;
+  border: #646568;
+}
+ion-thumbnail{
+  height: 120px;
+  width: 120px;
+  border-radius: 20px;
+}
+
+.bottom-text {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  // text-align: center;
+  // background-color: #f8f8f8; /* Optional background */
+  // padding: 10px;
+}
+
+
+
+
+/* Tab Styles */
+ion-tab-bar {
+  height: 80px; /* Increase tab bar size */
+  
+}
+
+ion-tab-button {
+  --color-selected: #3880ff;
+  --color: gray;
+  font-size: 16px;
+  transition: transform 0.2s ease-in-out;
+
+  &.selected {
+    --color: blue;
+    font-size: 20px;
+    transform: scale(1);
+  }
+
+  ion-icon {
+    font-size: 26px;
+    transition: font-size 0.2s ease-in-out;
+    margin: 0 auto; /* Center icon */
+    display: block;
+
+    &.selected {
+      font-size: 30px;
+      
+    }
+  }
+
+  span {
+    display: block;
+    text-align: center;
+    margin-top: 4px;
+  }
+}
+

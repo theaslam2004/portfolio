@@ -1,0 +1,97 @@
+<ion-header>
+  <ion-toolbar class="custom-toolbar">
+    <div class="greeting-icons-container">
+      <p>Hi, {{ user?.name }}!</p>
+      <div class="icons-container">
+        <ion-icon name="search" class="icon"></ion-icon>
+        <div class="basket-container">
+          <ion-icon name="basket" class="icon"></ion-icon>
+          <span class="notification-badge">1</span>
+        </div>
+      </div>
+    </div>
+    
+    <ion-title>
+      <div class="shop-category-container">
+        <p class="shop-text">Shop</p>
+        <h1 class="category-text">Category</h1>
+      </div>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content> 
+  <ion-grid>
+    <ion-row>
+      <ion-col size="4">
+        <ion-button shape="round" expand="block" fill="outline" style="--border-color: lightgray; --color: lightgray;">Meats & Featnes</ion-button>
+      </ion-col>
+      <ion-col size="4">
+        <ion-button shape="round" expand="block" fill="outline" style="--border-color: lightgray; --color: lightgray;">Vegetable</ion-button>
+      </ion-col>
+      <ion-col size="4">
+        <ion-button shape="round" expand="block" style="--background: orange; --color: white;">Fruit</ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  
+  <ion-list>
+    <ion-item>
+    <!-- <ion-item (click)="goToDetail('1')"> -->
+      <ion-thumbnail class="rounded-thumbnail" slot="start">
+        <img alt="Silhouette of mountains" src="assets/img/1.jpg" />
+      </ion-thumbnail>
+      <ion-label>
+        <div class="title"><h1>Mohamed Aslam</h1></div>
+        <div>Iwin</div>
+        <div class="bottom-text">
+          <div>Price</div>
+          <div class="blue-text">$250</div>
+        </div>
+      </ion-label>
+    </ion-item>
+  
+    <ion-item >
+    <!-- <ion-item (click)="goToDetail('2')"> -->
+      <ion-thumbnail class="rounded-thumbnail" slot="start">
+        <img alt="Silhouette of mountains" src="assets/img/2.jpg" />
+      </ion-thumbnail>
+      <ion-label>
+        <div class="title"><h1>Abish</h1></div>
+        <div>Iwin</div>
+        <div class="bottom-text">
+          <div>Price</div>
+          <div class="blue-text">$250</div>
+        </div>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+  
+
+  <!-- Tab Navigation -->
+  <ion-tabs>
+    <ion-tab-bar slot="bottom">
+     
+  
+      <ion-tab-button tab="category" [class.selected]="selectedTab === 'category'" (click)="selectedTab = 'category'">
+        <ion-icon name="list-outline"></ion-icon>
+        <span>Category</span>
+      </ion-tab-button>
+
+      <ion-tab-button tab="home" [class.selected]="selectedTab === '\grocery'" (click)="selectedTab = 'home'">
+        <ion-icon name="home-outline"></ion-icon>
+        <span>Home</span>
+      </ion-tab-button>
+  
+      <ion-tab-button tab="account" [class.selected]="selectedTab === 'account'" (click)="selectedTab = 'account'">
+        <ion-icon name="person-outline"></ion-icon>
+        <span>Account</span>
+      </ion-tab-button>
+  
+      <ion-tab-button tab="settings" [class.selected]="selectedTab === 'settings'" (click)="selectedTab = 'settings'">
+        <ion-icon name="settings-outline"></ion-icon>
+        <span>Settings</span>
+      </ion-tab-button>
+    </ion-tab-bar>
+  </ion-tabs>
+</ion-content>

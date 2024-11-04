@@ -1,0 +1,30 @@
+.button-group {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  ion-button {
+    margin: 5px;
+  }
+
+  ion-input {
+    margin: 5px; /* or 3px for a larger gap */
+  }
+  .button{
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+ .login-link-container {
+    margin-top: 40px; /* Adjust this value to bring it down */
+    text-align: center; /* Center text within the container */
+  }
+  
+  .login-link-container p {
+    margin-bottom: 8px; /* Space between the text and the link */
+  }
+  
+  .login-link-container a {
+    color: #3880ff; /* Change color to match your theme */
+    text-decoration: underline; /* Underline the link for better visibility */
+  }
+   

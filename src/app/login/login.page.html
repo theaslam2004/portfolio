@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Login</ion-title>
+    <ion-button slot="end" fill="clear" (click)="goToHomePage()">Home</ion-button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <form (ngSubmit)="onLogin()">
+    <ion-list>
+      <ion-item>
+        <ion-input label="Email or Phone" label-placement="floating" fill="outline" placeholder="Email or Phone" [(ngModel)]="loginData.identifier" name="identifier" required></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-input label="Password" label-placement="floating" fill="outline" type="password" placeholder="Enter password" [(ngModel)]="loginData.password" name="password" required></ion-input>
+      </ion-item>
+    </ion-list>
+<div class="button">
+    <ion-buttons class="button-group">
+      <ion-button (click)="onLogin()" fill="solid" color="primary">
+        Login
+      </ion-button>
+      
+    </ion-buttons>
+  </div>
+
+  <div class="reg-link-container">
+    <p>Have you signed up yet?</p>
+    <a routerLink="/registration">Sign up</a>
+  </div>
+  </form>
+</ion-content>

@@ -1,0 +1,30 @@
+ion-button {
+    margin: 10px;
+  }
+
+  ion-input {
+    margin: 5px; /* or 3px for a larger gap */
+  }
+  .button-group {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .button{
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .reg-link-container {
+    margin-top: 40px; /* Adjust this value to bring it down */
+    text-align: center; /* Center text within the container */
+  }
+  
+  .reg-link-container p {
+    margin-bottom: 8px; /* Space between the text and the link */
+  }
+  
+  .reg-link-container a {
+    color: #3880ff; /* Change color to match your theme */
+    text-decoration: underline; /* Underline the link for better visibility */
+  }
+   
